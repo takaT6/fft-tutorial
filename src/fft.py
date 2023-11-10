@@ -13,7 +13,7 @@ y8Hz = A*np.sin(2*np.pi*8.0*t) # 8Hzの正弦波の生成
 
 y_combine = y2Hz + y8Hz # 2つを合成
 
-N = sf * int(sec) #データ点数
+N = int(sf *sec) #データ点数
 
 # 高速フーリエ変換
 F = np.fft.fft(y_combine)
@@ -24,7 +24,7 @@ freq = np.fft.fftfreq(N, d=dt)
 # 振幅スペクトル
 Amp = np.abs(F / (N / 2))
 
-plt.plot(freq[:20], Amp[:20])
+plt.plot(freq[:10], Amp[:10])
 plt.xlabel('周波数[Hz]', fontsize=10)
 plt.ylabel('振幅スペクトル', fontsize=10)
 plt.show()
