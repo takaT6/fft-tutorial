@@ -1,6 +1,6 @@
 ### FFT チュートリアル
 
-画像表示にmatplotlibを使用しており、Docker環境で
+画像表示にmatplotlibを使用しており、do
 ## wsl docker 環境の場合
 
 ```
