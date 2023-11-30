@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import japanize_matplotlib
 
-sf = 44100  # サンプリングレート [Hz]
+sf = 44100  # サンプリング周波数 [Hz]
 sec = 1.0     # 信号の長さ [s]
 dt = 1/sf   # サンプリング周期 [s]
 A = 1.0     # 振幅
